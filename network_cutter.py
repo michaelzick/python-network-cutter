@@ -5,6 +5,8 @@ import netfilterqueue
 
 def process_packet(packet):
     print(packet)
+    packet.drop()
+    # packet.accept()
 
 
 queue = netfilterqueue.NetfilterQueue()
